@@ -1,0 +1,5 @@
+select	count(*),
+        D.nombre nombre_depto
+from ciudades as C, departamentos as D
+where C.dep_codigo = D.codigo
+group by D.codigo 
